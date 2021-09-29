@@ -29,13 +29,34 @@ namespace WinFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.BUTTON = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // BUTTON
+            // 
+            this.BUTTON.Location = new System.Drawing.Point(202, 131);
+            this.BUTTON.Name = "BUTTON";
+            this.BUTTON.Size = new System.Drawing.Size(396, 184);
+            this.BUTTON.TabIndex = 0;
+            this.BUTTON.Text = "RUSSIA!!!";
+            this.BUTTON.UseVisualStyleBackColor = true;
+            this.BUTTON.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BUTTON);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BUTTON;
     }
 }
 
